@@ -58,8 +58,8 @@ Creating two connection profiles explicitly bound to their respective interfaces
 With both VMs reachable (`ping` confirmed, `nmap -p 445` showed the port open), running `exploit/windows/smb/ms17_010_eternalblue` still failed:
 
 ```
-[-] 192.168.56.102:445 - An SMB Login Error occurred while connecting to the IPC$ tree.
-[-] 192.168.56.102:445 - The target is not vulnerable.
+[-] 192.***.**.***:445 - An SMB Login Error occurred while connecting to the IPC$ tree.
+[-] 192.***.**.***:445 - The target is not vulnerable.
 [*] Exploit completed, but no session was created.
 ```
 
