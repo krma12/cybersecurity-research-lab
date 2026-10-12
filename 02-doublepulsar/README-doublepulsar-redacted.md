@@ -89,7 +89,7 @@ use exploit/windows/smb/eternalblue_doublepulsar
 
 Worth documenting honestly: several "failures" during this lab were not technical issues at all —
 
-- `RHOSTS`/`LHOST` were repeatedly mistyped as `192.168.52.x` instead of `192.168.56.x`, and `LHOST` once as `<ATTACKER_IP_TYPO2>` (an extra digit). Both caused `run` to fail with a misleading `[-] Handler failed to bind` and `Oops, something was wrong!` that looked like exploit-level problems.
+- `RHOSTS`/`LHOST` were repeatedly mistyped as `192.168.**.x` instead of `192.168.**.x`, and `LHOST` once as `<ATTACKER_IP_TYPO2>` (an extra digit). Both caused `run` to fail with a misleading `[-] Handler failed to bind` and `Oops, something was wrong!` that looked like exploit-level problems.
 - `DOUBLEPULSARPATH`/`ETERNALBLUEPATH` were once `set` in a regular bash shell instead of inside `msfconsole` — bash accepted the command silently (as its own unrelated `set` builtin) without actually configuring the Metasploit module.
 
 **Lesson:** when a parameter-dependent exploit fails, `show options` before `run` — character by character — before assuming the vulnerability itself is the problem.
