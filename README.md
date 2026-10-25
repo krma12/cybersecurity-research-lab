@@ -10,11 +10,13 @@ This repository serves as a professional portfolio showcasing my hands-on expert
 
 | Project / CVE | Target Protocol | Primary Impact | Status |
 | :--- | :--- | :--- | :--- |
-| [📂 SMBGhost](./SMBGhost) (CVE-2020-0796) | SMBv3 | Memory Corruption / RDoS | ![Completed](https://shields.io) |
-| [📂 BlueKeep](./BlueKeep) (CVE-2019-0708) | RDP | Pre-Auth RCE / Wormable | ![Completed](https://shields.io) |
-| [📂 DoublePulsar](./DoublePulsar) | SMBv1 | Fileless Kernel Backdoor | ![Completed](https://shields.io) |
+| [📂 EternalBlue](./01-eternalblue) | SMBv1 | Remote Code Execution | ![Completed](https://shields.io) |
+| [📂 DoublePulsar](./02-doublepulsar) | SMBv1 | Fileless Kernel Backdoor | ![Completed](https://shields.io) |
+| [📂 BlueKeep](./03-BlueKeep) | RDP | Pre-Auth RCE / Wormable | ![Completed](https://shields.io) |
+| [📂 SMBGhost](./04-SMBGhostCVE2020-0796) | SMBv3 | Memory Corruption / RDoS | ![Completed](https://shields.io) |
 | 📂 SIEM & EDR Log Monitoring | Threat Hunting | Defensive Auditing | ![In Progress](https://shields.io) |
 | 📂 Linux Hardening & Scanning Lab | System Security | Host Hardening | ![Planned](https://shields.io) |
+
 
 ---
 
