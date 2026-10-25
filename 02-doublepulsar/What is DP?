@@ -1,1 +1,32 @@
 
+Resumen : DoublePulsar
+
+DoublePulsar es uno de los implantes de backdoor (puerta trasera) más famosos de la historia de la ciberseguridad. Fue desarrollado en secreto por la NSA (Agencia de Seguridad Nacional de EE. UU.) y posteriormente filtrado al público en abril de 2017 por el grupo de hackers conocido como The Shadow Brokers [sports].
+A diferencia de un exploit común, DoublePulsar no rompe la seguridad del sistema; es la herramienta que se instala después de que un exploit abre la puerta. Fue diseñado para inyectarse directamente en el corazón del sistema operativo (el modo kernel) a través del protocolo SMB (Server Message Block) [sports].
+
+¿Por qué fue tan importante e histórico en ciberseguridad?
+
+El impacto de DoublePulsar cambió por completo el panorama de las defensas informáticas globales debido a los siguientes factores:
+• Fue el "motor" detrás de WannaCry: DoublePulsar fue la herramienta clave utilizada en los ciberataques globales de WannaCry y NotPetya en 2017. El exploit EternalBlue rompía la seguridad del puerto 445 (SMB) e instalaba DoublePulsar; luego, DoublePulsar se encargaba de ejecutar el ransomware de forma silenciosa en la memoria del sistema.
+• Era un implante "invisible" (Sin archivos): DoublePulsar operaba completamente en la memoria RAM (tecnología fileless o sin archivos). No escribía nada en el disco duro ni alteraba archivos del sistema, lo que permitía que pasara completamente desapercibido para la gran mayoría de los antivirus comerciales y herramientas forenses de la época. Un reinicio de la computadora lo borraba, pero para entonces el atacante ya solía tener persistencia mediante otros métodos.
+• Infección masiva en tiempo récord: Pocos días después de la filtración de The Shadow Brokers, investigadores descubrieron que atacantes automatizados escanearon internet e infectaron más de 100,000 computadoras en todo el mundo con DoublePulsar en menos de una semana, preparando el terreno para el brote de WannaCry.
+• Diseño modular de grado militar: Al ser una herramienta de ciberespionaje estatal, su arquitectura era sumamente avanzada. Permitía a los atacantes remotos realizar tres tareas críticas de manera ultraestable:
+	1. Verificar si una máquina ya estaba infectada (mediante un "ping" especial de SMB).
+	2. Ejecutar código o scripts remotos directamente en el kernel de Windows.
+	3. Cargar y transferir malware adicional de forma discreta.
+
+
+Executive Summary: DoublePulsar 
+
+DoublePulsar is a highly sophisticated, kernel-level backdoor implant developed by the NSA (National Security Agency) that was leaked to the public in April 2017 by the threat group known as The Shadow Brokers [sports].
+
+ Why it made Cybersecurity History
+
+• The Payload Delivery for WannaCry: DoublePulsar was the core operational bridge during the catastrophic WannaCry and NotPetya global ransomware attacks of 2017. While the EternalBlue exploit breached the SMBv1 protocol (Port 445/TCP), it was DoublePulsar that stayed in memory to execute the payload.
+• Stealthy, Fileless Architecture: Operating entirely within the volatile memory (RAM) of the operating system's kernel, DoublePulsar was a premier example of fileless malware. Because it never touched the local hard drive, it bypassed traditional signature-based antivirus solutions and detection mechanisms of the era.
+• Massive Global Proliferation: Within days of the leak, automated internet-wide scanning campaigns deployed the implant across over 100,000 servers globally, making it one of the fastest enterprise-level infrastructure compromises ever recorded.
+• Military-Grade Protocol Hijacking: It subverted legitimate SMB connection states to allow unauthenticated attackers to query infected hosts, inject shellcode, and upgrade access tiers remotely with flawless stability.
+Con esto cerramos los tres pilares históricos de tu investigación (SMBGhost, BlueKeep y DoublePulsar). ¿Te gustaría que prepare una tabla comparativa final en inglés o español que resuma los puertos, protocolos y el impacto de estos tres para tu reporte de laboratorio?
+
+Disclosure
+Research made by Google AI for educational purposes. 
