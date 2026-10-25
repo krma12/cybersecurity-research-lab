@@ -1,1 +1,15 @@
 
+Technical Executive Summaries:  SMBGhost
+
+
+SMBGhost (CVE-2020-0796) — SMBv3 Decompression Integer Overflow
+
+SMBGhost is a critical vulnerability discovered in March 2020 within Microsoft's implementation of the Server Message Block v3.1.1 (SMBv3) protocol, which operates over port 445/TCP. The flaw stems from an integer overflow issue embedded inside the data compression mechanisms of the network driver (srv2.sys).
+
+ Key Characteristics & Laboratory Observations
+
+• Decompression Flaw: The vulnerability is triggered when an unauthenticated remote attacker sends a malformed compressed packet to a vulnerable SMBv3 server. The system fails to correctly validate the input packet size boundaries during decompression, leading to an out-of-bounds write primitive.
+• Dual-Vector Impact (RCE & RDoS): While theoretical exploitation allows for full Remote Code Execution (RCE) with maximum system privileges (NT AUTHORITY\SYSTEM), the underlying memory pool corruption is highly unstable. In a controlled laboratory or virtualized environment, execution attempts reliably trigger kernel-level panics, manifesting as an instantaneous Blue Screen of Death (BSOD) and verifying Remote Denial of Service (RDoS).
+• Wormable Potential: Similar to BlueKeep and EternalBlue, SMBGhost contains wormable characteristics, presenting a critical architectural risk for unsegmented internal enterprise subnets where lateral movement can be fully automated by active exploit chains.
+• Modern OS Target: Unlike older exploits that target legacy software, SMBGhost specifically targeted modern, active deployments of Windows 10 (Versions 1903 and 1909) and corresponding Windows Server editions before the distribution of security patch KB4551762.
+
