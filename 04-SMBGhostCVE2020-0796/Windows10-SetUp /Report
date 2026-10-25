@@ -1,1 +1,35 @@
+Steps to set windows10 up.
+
+Phase 0: Resource Acquisition and Victim Environment Deployment
+
+
+1. Vulnerable ISO Image Acquisition
+
+Since the SMBGhost (CVE-2020-0796) flaw specifically targets Windows 10 versions with active data compression in SMBv3, locating a build prior to the March 2020 security patches was required.
+• Resource: Official Windows 10 Disk Image (Version 1909 / Build 18363 - 64-bit).
+• Source: Internet Archive public digital preservation repository (ensuring an untampered, official ISO).
+• Storage: The installation file was downloaded and hosted on a dedicated external Solid-State Drive (SSD) to optimize hypervisor read/write performance and conserve host space.
+
+2. Network Perimeter Isolation
+
+Network parameters were modified within the hypervisor (VirtualBox) prior to the initial boot to completely cut off the victim machine's internet access. This strictly prevents background connections to update servers that would automatically patch the vulnerability.
+• Adapter Type: Host-only Adapter.
+• Assigned Segment: A private, isolated channel sharing direct communication exclusively with the attacker machine ([ATTACKER_IP]), with no external gateway.
+
+3. Installation Loop Bypass (Registry Modification)
+
+During the initial deployment from the ISO image, the Windows setup assistant encountered an unexpected reboot loop interrupt (OOBE error). An administrative command prompt was forced via keyboard shortcut to fix the setup directive within the system registry, allowing a clean local installation:
+• Tool: Registry Editor (regedit).
+• Modified Path: HKLM\SYSTEM\Setup\Status\ChildCompletion
+• Parameter: The setup.exe key value was altered from 1 to 3, forcing the system to bypass the initialization error and proceed smoothly to local account configuration ("Limited Setup").
+
+4. Local Connectivity and Port Exposure
+
+Once the desktop loaded, the static IPv4 address assignment within the isolated segment ([VICTIM_IP]) was verified. To allow the attacker machine to interact freely with the victim's file-sharing service (SMB), the native firewall profiles were entirely disabled using elevated privileges:
+cmd
+
+:: Globally disable all Windows Firewall network profiles
+netsh advfirewall set allprofiles state off
+
+Result: Successful, bidirectional communication verified via diagnostic tools (ping) between both systems, effectively exposing the required file-sharing port (445/TCP) for the upcoming scanning and exploitation phases.
 
