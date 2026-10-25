@@ -8,6 +8,7 @@ This repository serves as a professional portfolio showcasing my hands-on expert
 
 ##  Project Directory & Lab Status
 
+
 | Project / CVE | Target Protocol | Primary Impact | Status |
 | :--- | :--- | :--- | :--- |
 | [📂 EternalBlue](./01-eternalblue) | SMBv1 | Remote Code Execution | ![Completed](https://shields.io) |
@@ -16,6 +17,7 @@ This repository serves as a professional portfolio showcasing my hands-on expert
 | [📂 SMBGhost](./04-SMBGhostCVE2020-0796) | SMBv3 | Memory Corruption / RDoS | ![Completed](https://shields.io) |
 | 📂 SIEM & EDR Log Monitoring | Threat Hunting | Defensive Auditing | ![In Progress](https://shields.io) |
 | 📂 Linux Hardening & Scanning Lab | System Security | Host Hardening | ![Planned](https://shields.io) |
+
 
 
 ---
