@@ -29,7 +29,7 @@ Once the desktop loaded, the static IPv4 address assignment within the isolated 
 cmd
 
 :: Globally disable all Windows Firewall network profiles
-netsh advfirewall set allprofiles state off
+--> netsh advfirewall set allprofiles state off
 
 Result: Successful, bidirectional communication verified via diagnostic tools (ping) between both systems, effectively exposing the required file-sharing port (445/TCP) for the upcoming scanning and exploitation phases.
 
