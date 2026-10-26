@@ -8,7 +8,8 @@ This repository serves as a professional portfolio showcasing my hands-on expert
 
 ##  Project Directory & Lab Status
 
-
+| Project / CVE | Target Protocol | Primary Impact | Status |
+| :--- | :--- | :--- | :--- |
 | [📂 EternalBlue](./01-eternalblue) | SMBv1 | Remote Code Execution | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
 | [📂 DoublePulsar](./02-doublepulsar) | SMBv1 | Fileless Kernel Backdoor | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
 | [📂 BlueKeep](./03-BlueKeep) | RDP | Pre-Auth RCE / Wormable | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
