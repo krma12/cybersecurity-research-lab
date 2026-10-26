@@ -9,14 +9,12 @@ This repository serves as a professional portfolio showcasing my hands-on expert
 ##  Project Directory & Lab Status
 
 
-| Project / CVE | Target Protocol | Primary Impact | Status |
-| :--- | :--- | :--- | :--- |
-| [📂 EternalBlue](./01-eternalblue) | SMBv1 | Remote Code Execution | ![Completed](https://shields.io) |
-| [📂 DoublePulsar](./02-doublepulsar) | SMBv1 | Fileless Kernel Backdoor | ![Completed](https://shields.io) |
-| [📂 BlueKeep](./03-BlueKeep) | RDP | Pre-Auth RCE / Wormable | ![Completed](https://shields.io) |
-| [📂 SMBGhost](./04-SMBGhostCVE2020-0796) | SMBv3 | Memory Corruption / RDoS | ![Completed](https://shields.io) |
-| 📂 SIEM & EDR Log Monitoring | Threat Hunting | Defensive Auditing | ![In Progress](https://shields.io) |
-| 📂 Linux Hardening & Scanning Lab | System Security | Host Hardening | ![Planned](https://shields.io) |
+| [📂 EternalBlue](./01-eternalblue) | SMBv1 | Remote Code Execution | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
+| [📂 DoublePulsar](./02-doublepulsar) | SMBv1 | Fileless Kernel Backdoor | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
+| [📂 BlueKeep](./03-BlueKeep) | RDP | Pre-Auth RCE / Wormable | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
+| [📂 SMBGhost](./04-SMBGhostCVE2020-0796) | SMBv3 | Memory Corruption / RDoS | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
+| 📂 SIEM & EDR Log Monitoring | Threat Hunting | Defensive Auditing | ![In Progress](https://img.shields.io/badge/status-in%20progress-yellow) |
+| 📂 Linux Hardening & Scanning Lab | System Security | Host Hardening | ![Planned](https://img.shields.io/badge/status-planned-lightgrey) |
 
 
 
