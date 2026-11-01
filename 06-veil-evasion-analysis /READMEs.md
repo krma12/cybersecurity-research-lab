@@ -12,8 +12,8 @@ El objetivo de este laboratorio fue comprender las metodologías utilizadas para
 
 I. Entorno y herramientas
 
-• Atacante: Kali Linux (root@krma21) | IP: 192.168.56.101
-• Víctima: Windows 10 v1909 (Build 18363.418) | IP: 192.168.56.103
+• Atacante: Kali Linux (root@****) | IP: 192.168.**.***
+• Víctima: Windows 10 v1909 (Build 18363.418) | IP: 192.168.**.***
 • Herramientas: Veil-Framework (v3.1.14), Bat To Exe Converter (v3.0.8), Wine, Python HTTP Server, Metasploit Framework (msfconsole), VirusTotal.
 
 # Procedimiento
@@ -27,7 +27,7 @@ Se instaló e inició Veil-Framework en el equipo atacante. Al listar las herram
 
 Para la generación del artefacto base, se siguieron los siguientes pasos técnicos:
 1. Selección del Payload: Se cargó el módulo número 22 correspondiente a powershell/meterpreter/rev_tcp (Pure PowerShell Reverse TCP Stager).
-2. Configuración de Variables: Se definió el parámetro LHOST apuntando a la IP de escucha (192.168.56.101) y se aplicó un retraso de evasión mediante set SLEEP 20 para dificultar el análisis dinámico en entornos sandbox rudimentarios.
+2. Configuración de Variables: Se definió el parámetro LHOST apuntando a la IP de escucha (192.168.**.***) y se aplicó un retraso de evasión mediante set SLEEP 20 para dificultar el análisis dinámico en entornos sandbox rudimentarios.
 3. Generación del Script: Se ejecutó el comando generate, nombrando al archivo de salida como powerepayload. Veil exportó el código fuente en formato de procesamiento por lotes (.bat) y generó automáticamente un archivo de recursos .rc para automatizar el despliegue del manejador en Metasploit.
 4. Compilación Exe (B2E): Con el fin de empaquetar el script, se clonó el repositorio tokyoneon/B2E, se descomprimió la herramienta Bat_To_Exe_Converter.zip y se ejecutó su instalador sobre la capa de compatibilidad Wine. A través de la interfaz gráfica del compilador, se procesó el archivo .bat transformándolo en el ejecutable final pspayload.exe.
 5. Transferencia del Archivo: Se levantó un servicio HTTP temporal con Python en el puerto 8000 dentro del directorio de trabajo. Desde la máquina víctima con Windows 10, se accedió al servidor web y se procedió a descargar el binario.
