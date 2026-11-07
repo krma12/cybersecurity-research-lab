@@ -16,7 +16,7 @@ This repository serves as a professional portfolio showcasing my hands-on expert
 | 04 | [📂 SMBGhost](./04-SMBGhostCVE2020-0796) | SMBv3 | Memory Corruption / RDoS | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
 | 05 | [📂 Malware Delivery & Evasion Lab](<./05-Malware Delivery Simulation, Evasion Analysis & Post-Exploitation>) | MSFvenom / Encoders | Static Evasion & Post-Exploitation | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
 | 06 | [📂 Veil-Framework AV Evasion](<./06-veil-evasion-analisys >) | Veil-Framework / Bat-To-Exe | PowerShell Payload Obfuscation | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
-| 07 | [📂 TheFatRat Payload Analisys](<./07-FatRat-Analisys >) | TheFatRat / MSFvenom Wrapper | Cross-Platform Backdoor Generation & AV Evasion | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
+| 07 | [📂 TheFatRat Payload Analisys](<./07-FatRat-Analisys>) | TheFatRat / MSFvenom Wrapper | Cross-Platform Backdoor Generation & AV Evasion | ![Completed](https://img.shields.io/badge/status-completed-brightgreen) |
 | 08 | 📂 SIEM & EDR Log Monitoring | Threat Hunting | Defensive Auditing | ![In Progress](https://img.shields.io/badge/status-in%20progress-yellow) |
 | 09 | 📂 Linux Hardening & Scanning Lab | System Security | Host Hardening | ![Planned](https://img.shields.io/badge/status-planned-lightgrey) |
 
