@@ -1,19 +1,19 @@
-# 🐀 Tool Overview: TheFatRat Framework
+# Tool Overview: TheFatRat Framework
 
 ![Category](https://shields.io)
 ![Platform](https://shields.io)
 ![Purpose](https://shields.io)
 
-> **⚠️ Ethical Disclaimer:** This document and its associated lab exercises are strictly intended for educational purposes, defensive research, and authorized security auditing within isolated environments.
+> ** Ethical Disclaimer:** This document and its associated lab exercises are strictly intended for educational purposes, defensive research, and authorized security auditing within isolated environments.
 
 ---
 
-## 🇬🇧 English Overview
+## English Overview
 
 ### What is TheFatRat?
 **TheFatRat** is an open-source, automated exploitation and post-exploitation framework designed to streamline the generation of cross-platform payloads and backdoors. Acting as an interactive wrapper around **MSFvenom** and native cross-compilers (such as `mingw-w64`), it automates the creation of standalone executables, scripts, and embedded files.
 
-### ⚙️ Core Capabilities
+###  Core Capabilities
 
 | Feature | Technical Description |
 | :--- | :--- |
@@ -24,12 +24,12 @@
 
 ---
 
-## 🇪🇸 Resumen en Español
+## Resumen en Español
 
 ### ¿Qué es TheFatRat?
 **TheFatRat** es un framework automatizado de código abierto diseñado para agilizar la generación de payloads y backdoors multiplataforma. Funcionando como una interfaz interactiva sobre **MSFvenom** y compiladores cruzados nativos (como `mingw-w64`), automatiza la creación de ejecutables independientes, scripts y archivos embebidos.
 
-### ⚙️ Capacidades Principales
+###  Capacidades Principales
 
 | Característica | Descripción Técnica |
 | :--- | :--- |
