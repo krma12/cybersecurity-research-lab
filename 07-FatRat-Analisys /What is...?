@@ -1,0 +1,44 @@
+# 🐀 Tool Overview: TheFatRat Framework
+
+![Category](https://shields.io)
+![Platform](https://shields.io)
+![Purpose](https://shields.io)
+
+> **⚠️ Ethical Disclaimer:** This document and its associated lab exercises are strictly intended for educational purposes, defensive research, and authorized security auditing within isolated environments.
+
+---
+
+## 🇬🇧 English Overview
+
+### What is TheFatRat?
+**TheFatRat** is an open-source, automated exploitation and post-exploitation framework designed to streamline the generation of cross-platform payloads and backdoors. Acting as an interactive wrapper around **MSFvenom** and native cross-compilers (such as `mingw-w64`), it automates the creation of standalone executables, scripts, and embedded files.
+
+### ⚙️ Core Capabilities
+
+| Feature | Technical Description |
+| :--- | :--- |
+| **Multi-OS Support** | Generates tailored payloads for **Windows, Linux, macOS, and Android**. |
+| **Wrapper Compilation** | Embeds raw shellcode inside custom **C, C#, Python, or PowerShell** templates to alter static signatures. |
+| **File Pumper** | Artificially inflates binary file sizes to bypass cloud-scanner upload limits and disrupt hash matching. |
+| **Listener Automation** | Automatically generates `.rc` resource scripts to launch matching **Metasploit** handlers seamlessly. |
+
+---
+
+## 🇪🇸 Resumen en Español
+
+### ¿Qué es TheFatRat?
+**TheFatRat** es un framework automatizado de código abierto diseñado para agilizar la generación de payloads y backdoors multiplataforma. Funcionando como una interfaz interactiva sobre **MSFvenom** y compiladores cruzados nativos (como `mingw-w64`), automatiza la creación de ejecutables independientes, scripts y archivos embebidos.
+
+### ⚙️ Capacidades Principales
+
+| Característica | Descripción Técnica |
+| :--- | :--- |
+| **Soporte Multi-SO** | Genera payloads adaptados para **Windows, Linux, macOS y Android**. |
+| **Compilación de Envolturas** | Incrusta shellcode cruda dentro de plantillas personalizadas en **C, C#, Python o PowerShell** para alterar firmas estáticas. |
+| **File Pumper** | Aumenta artificialmente el tamaño del archivo binario para evadir límites de escaneo en la nube y romper coincidencias de hashes. |
+| **Automatización de Listeners** | Crea scripts de recursos (`.rc`) para levantar automáticamente los manejadores correspondientes en **Metasploit**. |
+
+---
+
+## 🛡️ Defensive Takeaway
+Understanding automated payload generators highlights why modern security operations cannot rely solely on **static file hashes**. Effective defense requires **Behavioral EDR monitoring**, **AppLocker/WDAC execution policies**, and strict **egress network filtering**.
